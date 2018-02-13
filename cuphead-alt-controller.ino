@@ -91,7 +91,7 @@ const bool kTouchPinsReverse[] = { false, false, false, false, false, false, fal
 /* vvv These values are only if you are using touch sensing (kUseTouchAsButtons is FALSE). vvv */
 // Because touch sensing pins are subject to noise, you need to explicitely turn on which touch pins you want to use here.
 // The pin #s each index goes to:   0      1      3      4      15      16    17     18     19     22     23
-const bool kTouchPinsActive[] = { false, false, false, false, false, false, false, false, false, false, false };
+const bool kTouchPinsActive[] = { true, true, true, true, true, true, true, true, true, true, true };
 
 // This is the threshold value for each pin. If touch sensing gets a value ABOVE this, it is triggered (like a button).
 // If it then gets a value below this, it is like that pretend button is released.
