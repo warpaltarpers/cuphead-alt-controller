@@ -72,8 +72,8 @@ const bool kUseTouchAsButtons = false;
 
 /* If kUseTouchAsButtons is TRUE, then all the pins that are touch sensing capable (just below) will be used like button pins. */
 // List which keyboard keys are associated with each touch pin.
-// The pin #s each index goes to: 0      1      3      4     15     16      17       18        19        22          23
-const uint16_t kTouchKeys[] = { KEY_W, KEY_A, KEY_S, KEY_D, KEY_J, KEY_X, KEY_UP, KEY_LEFT, KEY_DOWN, KEY_RIGHT, KEY_SPACE };
+// The pin #s each index goes to:  0             1           3        4       15       16         17       18       19     22      23
+const uint16_t kTouchKeys[] = { KEY_ESC, MODIFIERKEY_SHIFT, KEY_C, KEY_TAB, KEY_UP, KEY_RIGHT, KEY_DOWN, KEY_LEFT, KEY_Z, KEY_X, KEY_V };
 
 // List which modifier keys are to be used with the above key.
 // Four mod keys available: MODIFIERKEY_CTRL, MODIFIERKEY_SHIFT, MODIFIERKEY_ALT, MODIFIERKEY_GUI
@@ -91,7 +91,7 @@ const bool kTouchPinsReverse[] = { false, false, false, false, false, false, fal
 /* vvv These values are only if you are using touch sensing (kUseTouchAsButtons is FALSE). vvv */
 // Because touch sensing pins are subject to noise, you need to explicitely turn on which touch pins you want to use here.
 // The pin #s each index goes to:   0      1      3      4      15      16    17     18     19     22     23
-const bool kTouchPinsActive[] = { false, false, false, false, false, false, false, false, false, false, false };
+const bool kTouchPinsActive[] = { true, true, true, true, true, true, true, true, true, true, true };
 
 // This is the threshold value for each pin. If touch sensing gets a value ABOVE this, it is triggered (like a button).
 // If it then gets a value below this, it is like that pretend button is released.
