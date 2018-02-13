@@ -72,8 +72,8 @@ const bool kUseTouchAsButtons = false;
 
 /* If kUseTouchAsButtons is TRUE, then all the pins that are touch sensing capable (just below) will be used like button pins. */
 // List which keyboard keys are associated with each touch pin.
-// The pin #s each index goes to: 0      1      3      4     15     16      17       18        19        22          23
-const uint16_t kTouchKeys[] = { KEY_W, KEY_A, KEY_S, KEY_D, KEY_J, KEY_X, KEY_UP, KEY_LEFT, KEY_DOWN, KEY_RIGHT, KEY_SPACE };
+// The pin #s each index goes to:  0             1           3        4       15       16         17       18       19     22      23
+const uint16_t kTouchKeys[] = { KEY_ESC, MODIFIERKEY_SHIFT, KEY_C, KEY_TAB, KEY_UP, KEY_RIGHT, KEY_DOWN, KEY_LEFT, KEY_Z, KEY_X, KEY_V };
 
 // List which modifier keys are to be used with the above key.
 // Four mod keys available: MODIFIERKEY_CTRL, MODIFIERKEY_SHIFT, MODIFIERKEY_ALT, MODIFIERKEY_GUI
